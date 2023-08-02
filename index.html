@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<head>
+  <title>Anchal's Alarm</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="container">
+    <h1>Alarm Clock</h1>
+    <div id="clock">
+      <div id="hour" class="time"></div> <!-- Displays the hour -->
+      <div id="minute" class="time"></div> <!-- Displays the minute -->
+      <div id="second" class="time"></div> <!-- Displays the second -->
+      <div id="ampm" class="time"></div> <!-- Displays the AM/PM value -->
+    </div>
+    <img id="clock-image" src="img1.png" alt="clock">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <div id="set-alarm">
+      <h2>Set Alarm</h2>
+      <select id="alarm-hour">
+        <option value="">Hour</option> <!-- Dropdown to select the hour -->
+      </select>
+      <select id="alarm-minute">
+        <option value="">Minute</option> <!-- Dropdown to select the minute -->
+      </select>
+      <select id="alarm-time">
+        <option value="">AM/PM</option> <!-- Default option, displayed as "AM/PM" -->
+        <option value="am">AM</option> <!-- Dropdown to select AM -->
+        <option value="pm">PM</option> <!-- Dropdown to select PM -->
+      </select>
+      
+      <button id="set-alarm-button">Set Alarm</button> <!-- Button to set the alarm -->
+    </div>
+
+    <div id="alarms-list">
+      <h2>Alarms List</h2>
+      <ul id="alarms"></ul> <!-- List to display the set alarms -->
+    </div>
+  </div>
+  <div id="alarm-controls">
+    <!-- ...existing code... -->
+    <span id="button-placeholder"></span> <!-- Placeholder for the alarm control buttons -->
+  </div>
+  
+  <script src="script.js"></script> <!-- JavaScript code for the alarm functionality -->
+</body>
+</html>
